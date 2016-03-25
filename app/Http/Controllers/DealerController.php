@@ -16,7 +16,8 @@ class DealerController extends Controller
      */
     public function index()
     {
-      return Dealer::all();
+      $dealers = Dealer::all();
+      return \View::make('dealers.index', compact('dealers'));
     }
 
     /**
