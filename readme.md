@@ -15,8 +15,10 @@ php artisan migrate:rollback
 php artisan db:seed
 php artisan migrate --seed
 ```
-- Need to create dealer model ```php artisan make:model Dealer```
-- And some fake data to work with using Faker ```php artisan make:seeder DealersTableSeeder```
+- Need to create dealer model
+```php artisan make:model Dealer```
+- And some fake data to work with using Faker
+```php artisan make:seeder DealersTableSeeder```
 - Create a list of dealers page that displays id, name, address, zip,
    and status
 ``` php artisan make:controller DealerController --resource```
