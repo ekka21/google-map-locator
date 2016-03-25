@@ -16,9 +16,11 @@ class CreateDealersTable extends Migration
             $table->increments('id');
             $table->string('name');
             $table->string('address');
-            $table->string('state');
             $table->string('city');
+            $table->string('state');
             $table->string('zip');
+            $table->float('lat', 10, 6);
+            $table->float('lng', 10, 6);
             $table->dateTime('published_at')->nullable();
             $table->softDeletes();
             $table->timestamps();
