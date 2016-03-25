@@ -17,6 +17,6 @@ Route::group(['middleware' => ['web']], function () {
         return view('welcome');
     });
 
-    Route::resource('dealer', 'DealerController');
+    Route::resource('dealers', 'DealerController');
 
 });
